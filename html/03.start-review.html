@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>계산기</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/03.start-review.css">
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="calc">
+			<li>
+				<div class="title">덧셈</div>
+				<div class="cont">
+					<input type="text" id="v1"> +
+					<input type="text" id="v2"> =
+					<input type="text" id="result"> 
+					<button id="btSum">계산</button>
+					<button id="btReset">초기화</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script>
+		var v1 = document.getElementById("v1");
+		var v2 = document.getElementById("v2");
+		var result = document.getElementById("result");
+		var btSum = document.getElementById("btSum");
+		var btRest = document.getElementById("btReset");
+
+		btSum.addEventListener("click", function(){
+			result.value = Number(v1.value) + Number(v2.value);		
+		})
+		btReset.addEventListener("click", function(){
+			v1.value = "";	
+			v2.value = "";	
+			result.value = "";	
+		})
+	</script>
+</body>
+</html>
