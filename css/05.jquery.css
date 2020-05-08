@@ -1,0 +1,13 @@
+.wrapper {margin: 20px auto; max-width: 1200px; padding: 50px; border: 1px solid
+	#aaa;}
+.wrapper .box {width: 18%; height: 200px; margin: 1%; border: 10px solid black;
+float: left;} 
+#box1 {background-color: aqua;}
+#box2 {background-color: #e6c11e;}
+#box3 {background-color: brown; transition: all 1s;}
+#box4 {background-color: #6200ff;}
+#box5 {background-color: #f13210;}
+
+.bts {text-align: center; padding: 16px;}
+button {padding: 12px 16px; border: none; background-color: black; color: white;
+cursor: pointer;}
