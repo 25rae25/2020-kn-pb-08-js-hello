@@ -41,7 +41,6 @@ var std = [];
 /* btSave를 클릭시 */
 
 $("#btSave").click(function(){
-	
 	 std.push({
 		name: $("#name").val(),
 		kor: $("#kor").val(),
