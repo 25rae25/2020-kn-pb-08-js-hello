@@ -23,3 +23,5 @@ function insertData(data, idx) {
 	html += '</tr>';
 	$(".list-tb > tbody").append(html);
 }
+
+
