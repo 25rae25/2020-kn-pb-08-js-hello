@@ -3,3 +3,5 @@ function onResize() {
 	$(".youtube-wrap").height(movHei);
 }
 $(window).resize(onResize).trigger("resize");
+
+$( '#background' ).YTPlayer();
