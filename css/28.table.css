@@ -1,0 +1,8 @@
+h1 {font-size: 16px;}
+.sample-tb {width: 100;}
+.sample-tb td {width: 33.3333%; text-align: left; vertical-align: top;
+padding: 3rem;}
+
+.sample-tb td:nth-child(1) {background-color: #f08080;}
+.sample-tb td:nth-child(2) {background-color: #53da38;}
+.sample-tb td:nth-child(3) {background-color: #9880f0;}
