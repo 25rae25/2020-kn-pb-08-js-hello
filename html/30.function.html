@@ -1,0 +1,98 @@
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script>
+// IIFE - Immediately Invoked Function Expression
+(function () {
+	var a = 10;
+	function localFn() {
+		a = 20;
+		console.log(a);
+	}
+
+	localFn();
+	console.log(a);
+})();
+
+
+var b = 10;	//Global Variable 전역변수
+console.log(b);
+console.log(window.b);
+
+function c(str) {
+	return str + str;
+}
+console.log(c);
+console.log(window.c);
+
+// 아마도 window객체는 아래와 같이 생겼을 것이다.
+var window = {
+	alert: function(str) {
+		// 경고창을 띄우는 코드
+	},
+	b: 10,
+	c: function(str) {
+		return str + str;
+	}
+}
+
+
+console.clear();
+// Callback - Javascript 대표
+function expName(firstName, lastName, cb) {
+	var fullName = lastName + ' ' + firstName;
+	cb(fullName);
+}
+
+expName("덕규", "임", function(fullName){
+	console.log(fullName + " 입니다.");
+});
+
+/*
+function animate(values, speed, type, cb) {
+	var now = 0;
+	var last = imgs.length;
+	cb();
+}
+
+$(".slide").stop().animate({}, 500, "linear", function(){
+
+})
+*/
+
+console.clear();
+//콜백의 문제점
+var url = "https://8oi9s0nnth.apigw.ntruss.com/corona19-masks/v1/storesByGeo/json?lat=37.497986&lng=127.027533&m=1000";
+
+var result;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$.get(url, function(res) {
+	result = res;
+	console.log(result);
+	expName("덕규", "임", function(fullName){
+		console.log(fullName + " 입니다.");
+		expName(fullName, "ㅎㅎㅎ", function(fallName) {
+			console.log(fullName);
+		});
+	});
+});
+
+// promise, async/await -> node 수업때 설명..
+
+
+
+
+
+
+
+</script>
