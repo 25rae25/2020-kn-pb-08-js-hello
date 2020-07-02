@@ -1,0 +1,11 @@
+.slide-wrapper {background-color: #ccc;}
+.slide-stage {position: relative; max-width: 1200px; margin: auto; overflow: hidden;}
+.slide-wrap {position: relative; left: -50%; display: flex; width: 200%;}
+.slide {flex: 25% 0 0;}
+
+
+.bt {position: absolute; color: #fff; font-size: 8rem; top: calc(50% - 6rem); cursor: pointer; z-index: 60000; user-select: none;}
+.bt-prev {left: 2rem;}
+.bt-next {right: 2rem;}
+.pager-wrap {position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); color: #fff;}
+.pager {cursor: pointer; user-select: none;}
